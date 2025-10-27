@@ -32,6 +32,16 @@ The computed temperature distribution is saved to output files, which are then v
 
 ---
 
+## How it Works
+
+The solver uses the finite difference method to discretize the 2D heat equation:
+
+$$
+\frac{\partial u}{\partial t} = \alpha \left(\frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2}\right)
+$$
+
+where \( u(x, y, t) \) is the temperature at position \( (x, y) \) and time \( t \), and \( \alpha \) is the thermal diffusivity.
+
 ## 🧱 Program Parameters
 
 | Parameter | Description | Default |

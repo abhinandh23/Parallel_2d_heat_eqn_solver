@@ -53,11 +53,11 @@ Make sure your compiler supports **OpenMP** (e.g. `g++`).
 ```bash
 g++ -fopenmp report_2d_pde1.cpp -o heat_solver
 ```
-### **2.Run the program
+### 2.Run the program
 ```bash
 ./heat_solver
 ```
-### **3.View results
+### 3.View results
 First intstall the necessary dependencies in python using the command, it is reccomended to install them in a virtual environment
 ``` bash
 python -m venv .venv

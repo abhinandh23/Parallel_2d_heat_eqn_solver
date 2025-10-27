@@ -86,3 +86,9 @@ To View the results we have to run the python file, which whill take the ".dat" 
 python plot_dat.py --no-show
 ```
 Now we have the result of the parallel and serial methods in two separate .png files respectively
+
+## Authors
+
+- [abhinandh23](https://github.com/abhinandh23)
+- [jugalkkt](https://github.com/jugalkkt)
+

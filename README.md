@@ -8,22 +8,7 @@ The computed temperature distribution is saved to output files, which are then v
 
 ---
 
-## 🧮 Mathematical Model
 
-The 2D heat equation is given by:
-
-\[
-\frac{\partial u}{\partial t} = \alpha \left( 
-\frac{\partial^2 u}{\partial x^2} + 
-\frac{\partial^2 u}{\partial y^2} 
-\right)
-\]
-
-where:
-- \( u(x, y, t) \) = temperature at location (x, y) and time t  
-- \( \alpha \) = thermal diffusivity constant  
-
----
 
 ## ⚙️ Features
 
@@ -66,4 +51,26 @@ where:
 Make sure your compiler supports **OpenMP** (e.g. `g++`).
 
 ```bash
-g++ -fopenmp parallel_2d_heat_eqn_solver.cpp -o heat_solver
+g++ -fopenmp report_2d_pde1.cpp -o heat_solver
+```
+### **2.Run the program
+```bash
+./heat_solver
+```
+### **3.View results
+First intstall the necessary dependencies in python using the command, it is reccomended to install them in a virtual environment
+``` bash
+python -m venv .venv
+```
+Activate the virtual environment (Git Bash)
+```bash
+source .venv/Scripts/activate
+```
+Install the dependencies
+```bash
+python -m pip install matplotlib
+python -m pip install numpy
+```
+To View the results we have to run the python file, which whill take the ".dat" file as input abd give us a graphicacl representation of the result
+```bash
+python plot_dat.py --no-show

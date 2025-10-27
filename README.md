@@ -71,6 +71,6 @@ Install the dependencies
 python -m pip install matplotlib
 python -m pip install numpy
 ```
-To View the results we have to run the python file, which whill take the ".dat" file as input abd give us a graphicacl representation of the result
+To View the results we have to run the python file, which whill take the ".dat" file as input and give us a graphicacl representation of the result
 ```bash
 python plot_dat.py --no-show
